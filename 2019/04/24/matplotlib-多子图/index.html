@@ -96,14 +96,17 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  <meta name="description" content="1. subplot(numRows, numCols, plotNum) 12345678# 分成2x2，占用第一个，即第一行第一列的子图plt.subplot(221)# 分成2x2，占用第二个，即第一行第二列的子图plt.subplot(222)# 分成2x2，占用第二个，即第二行第一列的子图plt.subplot(223)plt.show()  2. subplots(nrows, nc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="matplotlib ---多子图">
+<meta property="og:url" content="http://yoursite.com/2019/04/24/matplotlib-多子图/index.html">
 <meta property="og:site_name" content="blog">
+<meta property="og:description" content="1. subplot(numRows, numCols, plotNum) 12345678# 分成2x2，占用第一个，即第一行第一列的子图plt.subplot(221)# 分成2x2，占用第二个，即第一行第二列的子图plt.subplot(222)# 分成2x2，占用第二个，即第二行第一列的子图plt.subplot(223)plt.show()  2. subplots(nrows, nc">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-23T10:09:52.840Z">
+<meta property="og:updated_time" content="2019-04-24T00:24:56.854Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="matplotlib ---多子图">
+<meta name="twitter:description" content="1. subplot(numRows, numCols, plotNum) 12345678# 分成2x2，占用第一个，即第一行第一列的子图plt.subplot(221)# 分成2x2，占用第二个，即第一行第二列的子图plt.subplot(222)# 分成2x2，占用第二个，即第二行第一列的子图plt.subplot(223)plt.show()  2. subplots(nrows, nc">
 
 
 
@@ -111,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/about/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/24/matplotlib-多子图/">
 
 
 
@@ -121,7 +124,7 @@
   };
 </script>
 
-  <title>about | blog</title>
+  <title>matplotlib ---多子图 | blog</title>
   
 
 
@@ -258,7 +261,7 @@
         
         
           
-          <li class="menu-item menu-item-about menu-item-active">
+          <li class="menu-item menu-item-about">
 
     
     
@@ -329,70 +332,188 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/24/matplotlib-多子图/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wuji">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/killer.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">about
-
-</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">matplotlib ---多子图
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-24 07:47:36 / Modified: 08:24:56" itemprop="dateCreated datePublished" datetime="2019-04-24T07:47:36+08:00">2019-04-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h3 id="1-subplotnumrows-numcols-plotnum"><a class="markdownIt-Anchor" href="#1-subplotnumrows-numcols-plotnum"></a> 1. subplot(numRows, numCols, plotNum)</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 分成2x2，占用第一个，即第一行第一列的子图</span></span><br><span class="line">plt.subplot(<span class="number">221</span>)</span><br><span class="line"><span class="comment"># 分成2x2，占用第二个，即第一行第二列的子图</span></span><br><span class="line">plt.subplot(<span class="number">222</span>)</span><br><span class="line"><span class="comment"># 分成2x2，占用第二个，即第二行第一列的子图</span></span><br><span class="line">plt.subplot(<span class="number">223</span>)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<h3 id="2-subplotsnrows-ncols-sharex-sharey"><a class="markdownIt-Anchor" href="#2-subplotsnrows-ncols-sharex-sharey"></a> 2. subplots(nrows, ncols, sharex, sharey)</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 一行两列的子图，并返回[ax1，ax2]数组作为两个子图取值帮助</span></span><br><span class="line">f, (ax1, ax2) = plt.subplots(<span class="number">1</span>, <span class="number">2</span>, sharey=<span class="literal">True</span>)</span><br><span class="line">ax1.plot(x, y)</span><br><span class="line">ax2.plot(x, y)</span><br></pre></td></tr></table></figure>
+<h3 id="3-gridspecnrows-ncols-wspace-hspace"><a class="markdownIt-Anchor" href="#3-gridspecnrows-ncols-wspace-hspace"></a> 3. GridSpec(nrows, ncols, wspace, hspace)</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 带行列间距的2 x 3网格</span></span><br><span class="line">grid = plt.GridSpec(<span class="number">2</span>, <span class="number">3</span>, wspace=<span class="number">0.4</span>, hspace=<span class="number">0.3</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过类似Python切片语法设置子图位置和扩展尺寸</span></span><br><span class="line">plt.subplot(grid[<span class="number">0</span>, <span class="number">0</span>])</span><br><span class="line">plt.subplot(grid[<span class="number">0</span>, <span class="number">1</span>:])</span><br></pre></td></tr></table></figure>
+<h3 id="4-subplot2gridshape-loc-rowspan-colspan"><a class="markdownIt-Anchor" href="#4-subplot2gridshape-loc-rowspan-colspan"></a> 4. subplot2grid(shape, loc, rowspan, colspan)</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2 x 3网格 并选择第一行第一个网格</span></span><br><span class="line">plt.subplot2grid((<span class="number">2</span>,<span class="number">3</span>),(<span class="number">0</span>,<span class="number">0</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2 x 3网格 并选择第二行第一个网格并占两个网格位置大小</span></span><br><span class="line">plt.subplot2grid((<span class="number">2</span>,<span class="number">3</span>),(<span class="number">1</span>,<span class="number">0</span>), colspan=<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+
       
     </div>
-    
-
-
 
     
+
     
     
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/23/模型的评估与数据处理-数据清洗/" rel="next" title="模型的评估与数据处理 ---数据清洗">
+                <i class="fa fa-chevron-left"></i> 模型的评估与数据处理 ---数据清洗
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
@@ -422,9 +543,18 @@
 
       
         
+          <ul class="sidebar-nav motion-element">
+            <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+              Table of Contents
+            </li>
+            <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+              Overview
+            </li>
+          </ul>
+        
       
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -492,6 +622,23 @@
       </div>
 
       
+        
+        <!--noindex-->
+          <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-subplotnumrows-numcols-plotnum"><span class="nav-number">1.</span> <span class="nav-text"> 1. subplot(numRows, numCols, plotNum)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-subplotsnrows-ncols-sharex-sharey"><span class="nav-number">2.</span> <span class="nav-text"> 2. subplots(nrows, ncols, sharex, sharey)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-gridspecnrows-ncols-wspace-hspace"><span class="nav-number">3.</span> <span class="nav-text"> 3. GridSpec(nrows, ncols, wspace, hspace)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-subplot2gridshape-loc-rowspan-colspan"><span class="nav-number">4.</span> <span class="nav-text"> 4. subplot2grid(shape, loc, rowspan, colspan)</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+        <!--/noindex-->
         
       
 
