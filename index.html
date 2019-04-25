@@ -748,7 +748,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-04-24 07:48:02" itemprop="dateModified" datetime="2019-04-24T07:48:02+08:00">2019-04-24</time>
+                <time title="Modified: 2019-04-26 01:09:32" itemprop="dateModified" datetime="2019-04-26T01:09:32+08:00">2019-04-26</time>
               
             
           </span>
@@ -804,8 +804,17 @@
           
             <p>
                一、分析数据
+ 二、缺失值处理
 
-              
+
+直接删除----适合缺失值数量较小，并且是随机出现的，删除它们对整体数据影响不大的情况；
+
+
+使用一个全局常量填充—譬如将缺失值用“Unknown”等填充，但是效果不一定好，因为算法可能会把它识别为一个新的类别，一般很少用；
+
+
+使用均值或中位数代替----优点
+              ...
             </p>
           <!--noindex-->
           
@@ -1613,9 +1622,9 @@
       
     
       
-    
-      
         
+      
+    
       
     
   
