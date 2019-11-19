@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python基础]]></title>
+    <url>%2F2019%2F11%2F19%2Fpython%E5%9F%BA%E7%A1%80%2F</url>
+          <content type="text"><![CDATA[python、numpy和pandas的数据结构 python–&gt;List是有序可重复，元素类型可以不相同，在内存中不连续 python–&gt;Set是无序不可重复，元素类型可以不相同 numpy–&gt;array是有序可重复，元素类型必须相同，在内存中连续 pandas–&gt;series的字符串表现形式为：索引在左边，值在右边。由于我们没有为数据指定索引。于是会自动创建一个0到N-1（N为长度）的整数型索引 pandas–&gt;DataFrame是一个表格型的数据结构(类Excel)，它包含有一组有序的列，每列可以是不同的值类型（数值，字符串，布尔值等）。DataFrame既有行索引也有列索引， 它可以被看做由Series组成的大字典 pandas–&gt;DataFrame是Series的容器，Panel是DataFrame的容器;panel的3轴(axis)的一些语义: items - axis 0，每个项目对应于内部包含的数据帧(DataFrame)。 major_axis - axis 1，它是每个数据帧(DataFrame)的索引(行)。 minor_axis - axis 2，它是每个数据帧(DataFrame)的列。 Pandas函数应用 apply()是一种让函数作用于列或者行操作，applymap()是一种让函数作用于DataFrame每一个元素的操作，而map是一种让函数作用于Series每一个元素的操作]]></content>
+          <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[特征工程 (一) ---特征构建]]></title>
     <url>%2F2019%2F04%2F24%2F%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B-%E4%B8%80-%E7%89%B9%E5%BE%81%E6%9E%84%E5%BB%BA%2F</url>
           <content type="text"><![CDATA[特征工程就是一个从原始数据提取特征的过程，目标是使这些特征能表征数据的本质特点，使基于这些特征建立的模型在未知数据上的性能，可以达到最优、最大限度地减少“垃圾进，垃圾出”。 特征构建指的是从原始数据中构建新的特征，在实际应用中需要手工构建。特征构建针对时间型、数字型、文本型等不同种类的输入数据，结合数据的特点，通过分解或切分的方法基于原来的特征创建新的特征，从而提高数据的预测能力。 1. 单列变量 单列变量方法指基于单列变量生成，即对单个变量进行转换、衍生，单列变量按照类型可以分为字符型、数值型、时间(日期)型，按照变量的样本内容格式可以分为离散型和连须型。]]></content>
